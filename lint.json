@@ -1,0 +1,52 @@
+[
+  {
+    "name": "normalizeArg",
+    "filePath": "packages/cli/src/utils/index.js",
+    "lines": [
+      {
+        "lineNumber": 21,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 22,
+        "line": " * Normalize string argument in command"
+      },
+      {
+        "lineNumber": 23,
+        "line": " *"
+      },
+      {
+        "lineNumber": 24,
+        "line": " * @export"
+      },
+      {
+        "lineNumber": 25,
+        "line": " * @param {String} argument"
+      },
+      {
+        "lineNumber": 26,
+        "line": " * @param {*} defaultValue"
+      },
+      {
+        "lineNumber": 27,
+        "line": " * @returns formatted argument"
+      },
+      {
+        "lineNumber": 28,
+        "line": " */"
+      },
+      {
+        "lineNumber": 29,
+        "line": "export function normalizeArg (arg, defaultValue) {"
+      }
+    ],
+    "codeParams": [
+      "arg",
+      "defaultValue"
+    ],
+    "docParams": [
+      "argument",
+      "defaultValue"
+    ]
+  }
+]
