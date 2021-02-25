@@ -1,0 +1,906 @@
+{
+  "coverage": "47.03%",
+  "expectCount": 657,
+  "actualCount": 309,
+  "files": {
+    "packages/babel-preset-app/src/index.js": {
+      "expectCount": 4,
+      "actualCount": 3,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/babel-preset-app/src/polyfills-plugin.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        2,
+        4
+      ]
+    },
+    "packages/builder/src/builder.js": {
+      "expectCount": 45,
+      "actualCount": 25,
+      "undocumentLines": [
+        30,
+        31,
+        33,
+        34,
+        35,
+        36,
+        37,
+        43,
+        46,
+        48,
+        73,
+        79,
+        81,
+        178,
+        179,
+        195,
+        396,
+        604,
+        779,
+        791
+      ]
+    },
+    "packages/builder/src/context/build.js": {
+      "expectCount": 8,
+      "actualCount": 1,
+      "undocumentLines": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9,
+        13
+      ]
+    },
+    "packages/builder/src/context/template.js": {
+      "expectCount": 5,
+      "actualCount": 1,
+      "undocumentLines": [
+        9,
+        11,
+        12,
+        56
+      ]
+    },
+    "packages/builder/src/ignore.js": {
+      "expectCount": 13,
+      "actualCount": 6,
+      "undocumentLines": [
+        5,
+        7,
+        8,
+        9,
+        13,
+        21,
+        22
+      ]
+    },
+    "packages/builder/src/index.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "packages/builder/test/__utils__/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/cli/src/command.js": {
+      "expectCount": 22,
+      "actualCount": 16,
+      "undocumentLines": [
+        13,
+        21,
+        23,
+        24,
+        95,
+        151
+      ]
+    },
+    "packages/cli/src/commands/index.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/cli/src/commands/webpack.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "packages/cli/src/imports.js": {
+      "expectCount": 6,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    "packages/cli/src/list.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "packages/cli/src/run.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        12
+      ]
+    },
+    "packages/cli/src/setup.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        6
+      ]
+    },
+    "packages/cli/src/utils/banner.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "packages/cli/src/utils/config.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "packages/cli/src/utils/constants.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        3,
+        4,
+        8
+      ]
+    },
+    "packages/cli/src/utils/dir.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "packages/cli/src/utils/formatting.js": {
+      "expectCount": 9,
+      "actualCount": 9,
+      "undocumentLines": []
+    },
+    "packages/cli/src/utils/generate.js": {
+      "expectCount": 5,
+      "actualCount": 5,
+      "undocumentLines": []
+    },
+    "packages/cli/src/utils/index.js": {
+      "expectCount": 5,
+      "actualCount": 4,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "packages/cli/src/utils/memory.js": {
+      "expectCount": 3,
+      "actualCount": 3,
+      "undocumentLines": []
+    },
+    "packages/cli/src/utils/serve.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "packages/cli/src/utils/webpack.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "packages/cli/test/fixtures/nuxt.async-config.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "packages/cli/test/fixtures/nuxt.async-error.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/cli/test/fixtures/nuxt.fn-config.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/cli/test/utils/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        9
+      ]
+    },
+    "packages/cli/test/utils/mocking.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        24,
+        37,
+        45,
+        58,
+        78,
+        85,
+        110
+      ]
+    },
+    "packages/config/src/config/_app.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/config/src/config/_common.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        5
+      ]
+    },
+    "packages/config/src/config/build.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "packages/config/src/config/cli.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/config/src/config/generate.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/config/src/config/index.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        14
+      ]
+    },
+    "packages/config/src/config/messages.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/config/src/config/modes.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "packages/config/src/config/render.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "packages/config/src/config/router.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/config/src/config/server.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/config/src/load.js": {
+      "expectCount": 3,
+      "actualCount": 2,
+      "undocumentLines": [
+        146
+      ]
+    },
+    "packages/config/src/options.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "packages/core/src/load.js": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "packages/core/src/module.js": {
+      "expectCount": 17,
+      "actualCount": 12,
+      "undocumentLines": [
+        8,
+        10,
+        11,
+        12,
+        17
+      ]
+    },
+    "packages/core/src/nuxt.js": {
+      "expectCount": 16,
+      "actualCount": 5,
+      "undocumentLines": [
+        15,
+        20,
+        23,
+        24,
+        53,
+        68,
+        74,
+        83,
+        110,
+        111,
+        112
+      ]
+    },
+    "packages/core/src/resolver.js": {
+      "expectCount": 10,
+      "actualCount": 5,
+      "undocumentLines": [
+        13,
+        15,
+        16,
+        24,
+        25
+      ]
+    },
+    "packages/generator/src/generator.js": {
+      "expectCount": 31,
+      "actualCount": 15,
+      "undocumentLines": [
+        13,
+        15,
+        16,
+        17,
+        20,
+        24,
+        25,
+        26,
+        27,
+        34,
+        35,
+        37,
+        44,
+        45,
+        168,
+        169
+      ]
+    },
+    "packages/generator/src/index.js": {
+      "expectCount": 1,
+      "actualCount": 1,
+      "undocumentLines": []
+    },
+    "packages/generator/test/__utils__/index.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        4,
+        6,
+        8
+      ]
+    },
+    "packages/server/src/context.js": {
+      "expectCount": 6,
+      "actualCount": 1,
+      "undocumentLines": [
+        1,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "packages/server/src/jsdom.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "packages/server/src/listener.js": {
+      "expectCount": 19,
+      "actualCount": 5,
+      "undocumentLines": [
+        8,
+        10,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    "packages/server/src/middleware/error.js": {
+      "expectCount": 4,
+      "actualCount": 1,
+      "undocumentLines": [
+        7,
+        77,
+        79
+      ]
+    },
+    "packages/server/src/middleware/nuxt.js": {
+      "expectCount": 4,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        102,
+        130,
+        147
+      ]
+    },
+    "packages/server/src/middleware/timing.js": {
+      "expectCount": 7,
+      "actualCount": 4,
+      "undocumentLines": [
+        5,
+        33,
+        36
+      ]
+    },
+    "packages/server/src/server.js": {
+      "expectCount": 28,
+      "actualCount": 15,
+      "undocumentLines": [
+        17,
+        19,
+        20,
+        22,
+        24,
+        29,
+        32,
+        35,
+        43,
+        52,
+        57,
+        58,
+        403
+      ]
+    },
+    "packages/utils/src/cjs.js": {
+      "expectCount": 12,
+      "actualCount": 10,
+      "undocumentLines": [
+        5,
+        13
+      ]
+    },
+    "packages/utils/src/constants.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        6
+      ]
+    },
+    "packages/utils/src/context.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        7,
+        19
+      ]
+    },
+    "packages/utils/src/lang.js": {
+      "expectCount": 9,
+      "actualCount": 1,
+      "undocumentLines": [
+        3,
+        7,
+        9,
+        11,
+        13,
+        17,
+        27,
+        35
+      ]
+    },
+    "packages/utils/src/locking.js": {
+      "expectCount": 6,
+      "actualCount": 4,
+      "undocumentLines": [
+        8,
+        10
+      ]
+    },
+    "packages/utils/src/modern.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        4,
+        20,
+        33,
+        46,
+        61
+      ]
+    },
+    "packages/utils/src/resolve.js": {
+      "expectCount": 15,
+      "actualCount": 2,
+      "undocumentLines": [
+        5,
+        7,
+        9,
+        11,
+        13,
+        21,
+        25,
+        26,
+        27,
+        29,
+        39,
+        97,
+        107
+      ]
+    },
+    "packages/utils/src/route.js": {
+      "expectCount": 9,
+      "actualCount": 0,
+      "undocumentLines": [
+        7,
+        22,
+        45,
+        101,
+        103,
+        164,
+        223,
+        244,
+        256
+      ]
+    },
+    "packages/utils/src/serialize.js": {
+      "expectCount": 2,
+      "actualCount": 2,
+      "undocumentLines": []
+    },
+    "packages/utils/src/task.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        1,
+        8,
+        12
+      ]
+    },
+    "packages/utils/src/timer.js": {
+      "expectCount": 10,
+      "actualCount": 6,
+      "undocumentLines": [
+        15,
+        24,
+        27,
+        29
+      ]
+    },
+    "packages/vue-app/src/index.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "packages/vue-app/template/jsonp.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        1,
+        2,
+        3
+      ]
+    },
+    "packages/vue-app/test/__utils__/index.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        6,
+        69
+      ]
+    },
+    "packages/vue-renderer/src/renderer.js": {
+      "expectCount": 27,
+      "actualCount": 12,
+      "undocumentLines": [
+        13,
+        15,
+        16,
+        19,
+        36,
+        37,
+        43,
+        60,
+        163,
+        167,
+        171,
+        185,
+        190,
+        313,
+        384
+      ]
+    },
+    "packages/vue-renderer/src/renderers/base.js": {
+      "expectCount": 8,
+      "actualCount": 4,
+      "undocumentLines": [
+        1,
+        3,
+        4,
+        6
+      ]
+    },
+    "packages/vue-renderer/src/renderers/modern.js": {
+      "expectCount": 12,
+      "actualCount": 6,
+      "undocumentLines": [
+        4,
+        9,
+        12,
+        30,
+        35,
+        39
+      ]
+    },
+    "packages/vue-renderer/src/renderers/spa.js": {
+      "expectCount": 8,
+      "actualCount": 5,
+      "undocumentLines": [
+        10,
+        14,
+        16
+      ]
+    },
+    "packages/vue-renderer/src/renderers/ssr.js": {
+      "expectCount": 10,
+      "actualCount": 8,
+      "undocumentLines": [
+        12,
+        13
+      ]
+    },
+    "packages/webpack/src/builder.js": {
+      "expectCount": 18,
+      "actualCount": 9,
+      "undocumentLines": [
+        15,
+        17,
+        19,
+        22,
+        23,
+        24,
+        25,
+        32,
+        231
+      ]
+    },
+    "packages/webpack/src/config/base.js": {
+      "expectCount": 27,
+      "actualCount": 15,
+      "undocumentLines": [
+        22,
+        24,
+        25,
+        26,
+        29,
+        37,
+        47,
+        51,
+        55,
+        59,
+        61,
+        73
+      ]
+    },
+    "packages/webpack/src/config/client.js": {
+      "expectCount": 13,
+      "actualCount": 8,
+      "undocumentLines": [
+        14,
+        17,
+        18,
+        19,
+        22
+      ]
+    },
+    "packages/webpack/src/config/modern.js": {
+      "expectCount": 5,
+      "actualCount": 2,
+      "undocumentLines": [
+        3,
+        6,
+        7
+      ]
+    },
+    "packages/webpack/src/config/server.js": {
+      "expectCount": 14,
+      "actualCount": 8,
+      "undocumentLines": [
+        10,
+        15,
+        18,
+        19,
+        22,
+        26
+      ]
+    },
+    "packages/webpack/src/plugins/vue/client.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        11,
+        13
+      ]
+    },
+    "packages/webpack/src/plugins/vue/cors.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "packages/webpack/src/plugins/vue/modern.js": {
+      "expectCount": 11,
+      "actualCount": 5,
+      "undocumentLines": [
+        10,
+        11,
+        13,
+        15,
+        16,
+        17
+      ]
+    },
+    "packages/webpack/src/plugins/vue/server.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        3,
+        5
+      ]
+    },
+    "packages/webpack/src/plugins/vue/util.js": {
+      "expectCount": 5,
+      "actualCount": 0,
+      "undocumentLines": [
+        8,
+        25,
+        27,
+        29,
+        31
+      ]
+    },
+    "packages/webpack/src/plugins/warning-ignore.js": {
+      "expectCount": 4,
+      "actualCount": 2,
+      "undocumentLines": [
+        1,
+        3
+      ]
+    },
+    "packages/webpack/src/plugins/watchpack.js": {
+      "expectCount": 8,
+      "actualCount": 3,
+      "undocumentLines": [
+        8,
+        19,
+        21,
+        22,
+        25
+      ]
+    },
+    "packages/webpack/src/utils/async-mfs.js": {
+      "expectCount": 3,
+      "actualCount": 0,
+      "undocumentLines": [
+        2,
+        4,
+        6
+      ]
+    },
+    "packages/webpack/src/utils/perf-loader.js": {
+      "expectCount": 10,
+      "actualCount": 5,
+      "undocumentLines": [
+        8,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "packages/webpack/src/utils/postcss-v8.js": {
+      "expectCount": 16,
+      "actualCount": 8,
+      "undocumentLines": [
+        9,
+        37,
+        39,
+        42,
+        46,
+        50,
+        66,
+        186
+      ]
+    },
+    "packages/webpack/src/utils/postcss.js": {
+      "expectCount": 15,
+      "actualCount": 8,
+      "undocumentLines": [
+        9,
+        37,
+        39,
+        42,
+        46,
+        62,
+        180
+      ]
+    },
+    "packages/webpack/src/utils/reserved-tags.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "packages/webpack/src/utils/style-loader.js": {
+      "expectCount": 18,
+      "actualCount": 10,
+      "undocumentLines": [
+        9,
+        11,
+        12,
+        13,
+        14,
+        21,
+        28,
+        32
+      ]
+    }
+  }
+}

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">packages/builder/src/builder.js | nuxtjs-esdocs</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/JeremyJaydan/nuxtjs-esdocs"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-src">builder/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/builder.js~Builder.html">Builder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/ignore.js~Ignore.html">Ignore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-build">build</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getBuilder">getBuilder</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-src-context">builder/src/context</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/context/build.js~BuildContext.html">BuildContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/context/template.js~TemplateContext.html">TemplateContext</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-test---utils--">builder/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createNuxt">createNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src">cli/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/cli/src/command.js~NuxtCommand.html">NuxtCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-builder">builder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-core">core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generator">generator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-importModule">importModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-server">server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-webpack">webpack</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-listCommands">listCommands</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-run">run</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setup">setup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src-commands">cli/src/commands</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCommand">getCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src-utils">cli/src/utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-showBanner">showBanner</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxtConfig">loadNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-maxCharsPerLine">maxCharsPerLine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNuxtDir">isNuxtDir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-box">box</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-colorize">colorize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-errorBox">errorBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fatalBox">fatalBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-foldLines">foldLines</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indent">indent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indentLines">indentLines</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-successBox">successBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-warningBox">warningBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compareSnapshots">compareSnapshots</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ensureBuild">ensureBuild</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generate">generate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-snapshot">snapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createLock">createLock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-forceExit">forceExit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatPath">formatPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizeArg">normalizeArg</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getFormattedMemoryUsage">getFormattedMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMemoryUsage">getMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-showMemoryUsage">showMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-serve">serve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getWebpackConfig">getWebpackConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-forceExitTimeout">forceExitTimeout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-optionSpaces">optionSpaces</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startSpaces">startSpaces</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eventsMapping">eventsMapping</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-test-fixtures">cli/test/fixtures</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-test-utils">cli/test/utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-localPath">localPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockBuilder">mockBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetBuilder">mockGetBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetGenerator">mockGetGenerator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxt">mockGetNuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxtConfig">mockGetNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxtStart">mockGetNuxtStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockNuxt">mockNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#config-src">config/src</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxtConfig">loadNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getNuxtConfig">getNuxtConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#config-src-config">config/src/config</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_app">_app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_common">_common</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-build">build</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cli">cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generate">generate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDefaultNuxtConfig">getDefaultNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-messages">messages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-modes">modes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-router">router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-server">server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaultNuxtConfigFile">defaultNuxtConfigFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-src">core/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/module.js~ModuleContainer.html">ModuleContainer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/nuxt.js~Nuxt.html">Nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/resolver.js~Resolver.html">Resolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxt">loadNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#generator-src">generator/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/generator/src/generator.js~Generator.html">Generator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getGenerator">getGenerator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#generator-test---utils--">generator/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createNuxt">createNuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hookCalls">hookCalls</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#server-src">server/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/context.js~ServerContext.html">ServerContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/listener.js~Listener.html">Listener</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderAndGetWindow">renderAndGetWindow</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#server-src-middleware">server/src/middleware</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-error">error</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-timing">timing</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils-src">utils/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/utils/src/timer.js~Timer.html">Timer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearRequireCache">clearRequireCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRequire">createRequire</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPKG">getPKG</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getRequireCacheItem">getRequireCacheItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExternalDependency">isExternalDependency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHMRCompatible">isHMRCompatible</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-requireModule">requireModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-resolveModule">resolveModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-scanRequireTree">scanRequireTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tryRequire">tryRequire</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tryResolve">tryResolve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-determineGlobals">determineGlobals</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getContext">getContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFullStatic">isFullStatic</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeHtml">encodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNonEmptyString">isNonEmptyString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPureObject">isPureObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-stripWhitespace">stripWhitespace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wrapArray">wrapArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createLockPath">createLockPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLockOptions">getLockOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLockPath">getLockPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lock">lock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isModernBrowser">isModernBrowser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isModernRequest">isModernRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-defineAlias">defineAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMainModule">getMainModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isIndexFileAndFolder">isIndexFileAndFolder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-r">r</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-relativeTo">relativeTo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startsWithAlias">startsWithAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wChunk">wChunk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wp">wp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRoutes">createRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flatRoutes">flatRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-guardDir">guardDir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-promisifyRoute">promisifyRoute</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sortRoutes">sortRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizeFunctions">normalizeFunctions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-serializeFunction">serializeFunction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chainFn">chainFn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parallel">parallel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sequence">sequence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-timeout">timeout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-waitFor">waitFor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MODES">MODES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TARGETS">TARGETS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-urlJoin">urlJoin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaultLockOptions">defaultLockOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-lockPaths">lockPaths</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ModernBrowsers">ModernBrowsers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-safariNoModuleFix">safariNoModuleFix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isWindows">isWindows</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startsWithRootAlias">startsWithRootAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startsWithSrcAlias">startsWithSrcAlias</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-src">vue-app/src</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-template">template</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-template">vue-app/template</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-installJsonp">installJsonp</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-test---utils--">vue-app/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compileTemplate">compileTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-importComponent">importComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-vmTick">vmTick</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-renderer-src">vue-renderer/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderer.js~VueRenderer.html">VueRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-renderer-src-renderers">vue-renderer/src/renderers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/base.js~BaseRenderer.html">BaseRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/modern.js~ModernRenderer.html">ModernRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/spa.js~SPARenderer.html">SPARenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/ssr.js~SSRRenderer.html">SSRRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src">webpack/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/builder.js~WebpackBundler.html">WebpackBundler</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-config">webpack/src/config</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/base.js~WebpackBaseConfig.html">WebpackBaseConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/client.js~WebpackClientConfig.html">WebpackClientConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/modern.js~WebpackModernConfig.html">WebpackModernConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/server.js~WebpackServerConfig.html">WebpackServerConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-plugins">webpack/src/plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/warning-ignore.js~WarningIgnorePlugin.html">WarningIgnorePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/watchpack.js~NodeWatchFileSystem.html">NodeWatchFileSystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/watchpack.js~Watchpack2Plugin.html">Watchpack2Plugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-plugins-vue">webpack/src/plugins/vue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/client.js~VueSSRClientPlugin.html">VueSSRClientPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/cors.js~CorsPlugin.html">CorsPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/modern.js~ModernModePlugin.html">ModernModePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/server.js~VueSSRServerPlugin.html">VueSSRServerPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-extractQueryPartJS">extractQueryPartJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCSS">isCSS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isJS">isJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validate">validate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-utils">webpack/src/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/async-mfs.js~AsyncMFS.html">AsyncMFS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/perf-loader.js~PerfLoader.html">PerfLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/postcss-v8.js~PostcssConfig.html">PostcssConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/postcss.js~PostcssConfig.html">PostcssConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/style-loader.js~StyleLoader.html">StyleLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-orderPresets">orderPresets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-orderPresets">orderPresets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reservedVueTags">reservedVueTags</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">packages/builder/src/builder.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import path from &apos;path&apos;
+import chalk from &apos;chalk&apos;
+import chokidar from &apos;chokidar&apos;
+import consola from &apos;consola&apos;
+import fsExtra from &apos;fs-extra&apos;
+import Glob from &apos;glob&apos;
+import hash from &apos;hash-sum&apos;
+import pify from &apos;pify&apos;
+import upath from &apos;upath&apos;
+import { debounce, omit, template, uniq, uniqBy } from &apos;lodash&apos;
+import {
+  r,
+  createRoutes,
+  relativeTo,
+  waitFor,
+  determineGlobals,
+  stripWhitespace,
+  isIndexFileAndFolder,
+  scanRequireTree,
+  TARGETS
+} from &apos;@nuxt/utils&apos;
+
+import { template as VueAppTemplate } from &apos;@nuxt/vue-app&apos;
+import { BundleBuilder as WebpackBuilder } from &apos;@nuxt/webpack&apos;
+
+import Ignore from &apos;./ignore&apos;
+import BuildContext from &apos;./context/build&apos;
+import TemplateContext from &apos;./context/template&apos;
+
+const glob = pify(Glob)
+export default class Builder {
+  constructor (nuxt, bundleBuilder) {
+    this.nuxt = nuxt
+    this.plugins = []
+    this.options = nuxt.options
+    this.globals = determineGlobals(nuxt.options.globalName, nuxt.options.globals)
+    this.watchers = {
+      files: null,
+      custom: null,
+      restart: null
+    }
+
+    this.supportedExtensions = [&apos;vue&apos;, &apos;js&apos;, ...(this.options.build.additionalExtensions || [])]
+
+    // Helper to resolve build paths
+    this.relativeToBuild = (...args) =&gt; relativeTo(this.options.buildDir, ...args)
+
+    this._buildStatus = STATUS.INITIAL
+
+    // Hooks for watch lifecycle
+    if (this.options.dev) {
+      // Start watching after initial render
+      this.nuxt.hook(&apos;build:done&apos;, () =&gt; {
+        consola.info(&apos;Waiting for file changes&apos;)
+        this.watchClient()
+        this.watchRestart()
+      })
+
+      // Enable HMR for serverMiddleware
+      this.serverMiddlewareHMR()
+
+      // Close hook
+      this.nuxt.hook(&apos;close&apos;, () =&gt; this.close())
+    }
+
+    if (this.options.build.analyze) {
+      this.nuxt.hook(&apos;build:done&apos;, () =&gt; {
+        consola.warn(&apos;Notice: Please do not deploy bundles built with &quot;analyze&quot; mode, they\&apos;re for analysis purposes only.&apos;)
+      })
+    }
+
+    // Resolve template
+    this.template = this.options.build.template || VueAppTemplate
+    if (typeof this.template === &apos;string&apos;) {
+      this.template = this.nuxt.resolver.requireModule(this.template).template
+    }
+
+    // Create a new bundle builder
+    this.bundleBuilder = this.getBundleBuilder(bundleBuilder)
+
+    this.ignore = new Ignore({
+      rootDir: this.options.srcDir,
+      ignoreArray: this.options.ignore
+    })
+  }
+
+  getBundleBuilder (BundleBuilder) {
+    if (typeof BundleBuilder === &apos;object&apos;) {
+      return BundleBuilder
+    }
+
+    const context = new BuildContext(this)
+
+    if (typeof BundleBuilder !== &apos;function&apos;) {
+      BundleBuilder = WebpackBuilder
+    }
+
+    return new BundleBuilder(context)
+  }
+
+  forGenerate () {
+    this.options.target = TARGETS.static
+    this.bundleBuilder.forGenerate()
+  }
+
+  async build () {
+    // Avoid calling build() method multiple times when dev:true
+    if (this._buildStatus === STATUS.BUILD_DONE &amp;&amp; this.options.dev) {
+      return this
+    }
+    // If building
+    if (this._buildStatus === STATUS.BUILDING) {
+      await waitFor(1000)
+      return this.build()
+    }
+    this._buildStatus = STATUS.BUILDING
+
+    if (this.options.dev) {
+      consola.info(&apos;Preparing project for development&apos;)
+      consola.info(&apos;Initial build may take a while&apos;)
+    } else {
+      consola.info(&apos;Production build&apos;)
+      if (this.options.render.ssr) {
+        consola.info(`Bundling for ${chalk.bold.yellow(&apos;server&apos;)} and ${chalk.bold.green(&apos;client&apos;)} side`)
+      } else {
+        consola.info(`Bundling only for ${chalk.bold.green(&apos;client&apos;)} side`)
+      }
+      consola.info(`Target: ${chalk.bold.cyan(this.options.target)}`)
+    }
+
+    // Wait for nuxt ready
+    await this.nuxt.ready()
+
+    // Call before hook
+    await this.nuxt.callHook(&apos;build:before&apos;, this, this.options.build)
+
+    await this.validatePages()
+
+    consola.success(&apos;Builder initialized&apos;)
+
+    consola.debug(`App root: ${this.options.srcDir}`)
+
+    // Create or empty .nuxt/, .nuxt/components and .nuxt/dist folders
+    await fsExtra.emptyDir(r(this.options.buildDir))
+    const buildDirs = [r(this.options.buildDir, &apos;components&apos;)]
+    if (!this.options.dev) {
+      buildDirs.push(
+        r(this.options.buildDir, &apos;dist&apos;, &apos;client&apos;),
+        r(this.options.buildDir, &apos;dist&apos;, &apos;server&apos;)
+      )
+    }
+    await Promise.all(buildDirs.map(dir =&gt; fsExtra.emptyDir(dir)))
+
+    // Call ready hook
+    await this.nuxt.callHook(&apos;builder:prepared&apos;, this, this.options.build)
+
+    // Generate routes and interpret the template files
+    await this.generateRoutesAndFiles()
+
+    // Add vue-app template dir to watchers
+    this.options.build.watch.push(this.globPathWithExtensions(this.template.dir))
+
+    await this.resolvePlugins()
+
+    // Start bundle build: webpack, rollup, parcel...
+    await this.bundleBuilder.build()
+
+    // Flag to set that building is done
+    this._buildStatus = STATUS.BUILD_DONE
+
+    // Call done hook
+    await this.nuxt.callHook(&apos;build:done&apos;, this)
+
+    return this
+  }
+
+  // Check if pages dir exists and warn if not
+  async validatePages () {
+    this._nuxtPages = typeof this.options.build.createRoutes !== &apos;function&apos;
+
+    if (
+      !this._nuxtPages ||
+      await fsExtra.exists(path.resolve(this.options.srcDir, this.options.dir.pages))
+    ) {
+      return
+    }
+
+    const dir = this.options.srcDir
+    if (await fsExtra.exists(path.join(this.options.srcDir, &apos;..&apos;, this.options.dir.pages))) {
+      throw new Error(
+        `No \`${this.options.dir.pages}\` directory found in ${dir}. Did you mean to run \`nuxt\` in the parent (\`../\`) directory?`
+      )
+    }
+
+    this._defaultPage = true
+    consola.warn(`No \`${this.options.dir.pages}\` directory found in ${dir}. Using the default built-in page.`)
+  }
+
+  globPathWithExtensions (path) {
+    return `${path}/**/*.{${this.supportedExtensions.join(&apos;,&apos;)}}`
+  }
+
+  createTemplateContext () {
+    return new TemplateContext(this, this.options)
+  }
+
+  async generateRoutesAndFiles () {
+    consola.debug(&apos;Generating nuxt files&apos;)
+
+    this.plugins = Array.from(await this.normalizePlugins())
+
+    const templateContext = this.createTemplateContext()
+
+    await Promise.all([
+      this.resolveLayouts(templateContext),
+      this.resolveRoutes(templateContext),
+      this.resolveStore(templateContext),
+      this.resolveMiddleware(templateContext)
+    ])
+
+    this.addOptionalTemplates(templateContext)
+
+    await this.resolveCustomTemplates(templateContext)
+
+    await this.resolveLoadingIndicator(templateContext)
+
+    await this.compileTemplates(templateContext)
+
+    consola.success(&apos;Nuxt files generated&apos;)
+  }
+
+  async normalizePlugins () {
+    // options.extendPlugins allows for returning a new plugins array
+    if (typeof this.options.extendPlugins === &apos;function&apos;) {
+      const extendedPlugins = this.options.extendPlugins(this.options.plugins)
+
+      if (Array.isArray(extendedPlugins)) {
+        this.options.plugins = extendedPlugins
+      }
+    }
+
+    // extendPlugins hook only supports in-place modifying
+    await this.nuxt.callHook(&apos;builder:extendPlugins&apos;, this.options.plugins)
+
+    const modes = [&apos;client&apos;, &apos;server&apos;]
+    const modePattern = new RegExp(`\\.(${modes.join(&apos;|&apos;)})(\\.\\w+)*$`)
+    return uniqBy(
+      this.options.plugins.map((p) =&gt; {
+        if (typeof p === &apos;string&apos;) {
+          p = { src: p }
+        }
+        const pluginBaseName = path.basename(p.src, path.extname(p.src)).replace(
+          /[^a-zA-Z?\d\s:]/g,
+          &apos;&apos;
+        )
+
+        if (p.ssr === false) {
+          p.mode = &apos;client&apos;
+        } else if (p.mode === undefined) {
+          p.mode = &apos;all&apos;
+          p.src.replace(modePattern, (_, mode) =&gt; {
+            if (modes.includes(mode)) {
+              p.mode = mode
+            }
+          })
+        } else if (![&apos;client&apos;, &apos;server&apos;, &apos;all&apos;].includes(p.mode)) {
+          consola.warn(`Invalid plugin mode (server/client/all): &apos;${p.mode}&apos;. Falling back to &apos;all&apos;`)
+          p.mode = &apos;all&apos;
+        }
+
+        return {
+          src: this.nuxt.resolver.resolveAlias(p.src),
+          mode: p.mode,
+          name: &apos;nuxt_plugin_&apos; + pluginBaseName + &apos;_&apos; + hash(p.src)
+        }
+      }),
+      p =&gt; p.name
+    )
+  }
+
+  addOptionalTemplates (templateContext) {
+    if (this.options.build.indicator) {
+      templateContext.templateFiles.push(&apos;components/nuxt-build-indicator.vue&apos;)
+    }
+
+    if (this.options.loading !== false) {
+      templateContext.templateFiles.push(&apos;components/nuxt-loading.vue&apos;)
+    }
+  }
+
+  async resolveFiles (dir, cwd = this.options.srcDir) {
+    return this.ignore.filter(await glob(this.globPathWithExtensions(dir), {
+      cwd,
+      follow: this.options.build.followSymlinks
+    }))
+  }
+
+  async resolveRelative (dir) {
+    const dirPrefix = new RegExp(`^${dir}/`)
+    return (await this.resolveFiles(dir)).map(file =&gt; ({ src: file.replace(dirPrefix, &apos;&apos;) }))
+  }
+
+  async resolveLayouts ({ templateVars, templateFiles }) {
+    if (!this.options.features.layouts) {
+      return
+    }
+
+    if (await fsExtra.exists(path.resolve(this.options.srcDir, this.options.dir.layouts))) {
+      for (const file of await this.resolveFiles(this.options.dir.layouts)) {
+        const name = file
+          .replace(new RegExp(`^${this.options.dir.layouts}/`), &apos;&apos;)
+          .replace(new RegExp(`\\.(${this.supportedExtensions.join(&apos;|&apos;)})$`), &apos;&apos;)
+
+        // Layout Priority: module.addLayout &gt; .vue file &gt; other extensions
+        if (name === &apos;error&apos;) {
+          if (!templateVars.components.ErrorPage) {
+            templateVars.components.ErrorPage = this.relativeToBuild(
+              this.options.srcDir,
+              file
+            )
+          }
+        } else if (this.options.layouts[name]) {
+          consola.warn(`Duplicate layout registration, &quot;${name}&quot; has been registered as &quot;${this.options.layouts[name]}&quot;`)
+        } else if (!templateVars.layouts[name] || /\.vue$/.test(file)) {
+          templateVars.layouts[name] = this.relativeToBuild(
+            this.options.srcDir,
+            file
+          )
+        }
+      }
+    }
+
+    // If no default layout, create its folder and add the default folder
+    if (!templateVars.layouts.default) {
+      await fsExtra.mkdirp(r(this.options.buildDir, &apos;layouts&apos;))
+      templateFiles.push(&apos;layouts/default.vue&apos;)
+      templateVars.layouts.default = &apos;./layouts/default.vue&apos;
+    }
+  }
+
+  async resolveRoutes ({ templateVars }) {
+    consola.debug(&apos;Generating routes...&apos;)
+    const { routeNameSplitter, trailingSlash } = this.options.router
+
+    if (this._defaultPage) {
+      templateVars.router.routes = createRoutes({
+        files: [&apos;index.vue&apos;],
+        srcDir: this.template.dir + &apos;/pages&apos;,
+        routeNameSplitter,
+        trailingSlash
+      })
+    } else if (this._nuxtPages) {
+      // Use nuxt createRoutes bases on pages/
+      const files = {}
+      const ext = new RegExp(`\\.(${this.supportedExtensions.join(&apos;|&apos;)})$`)
+      for (const page of await this.resolveFiles(this.options.dir.pages)) {
+        const key = page.replace(ext, &apos;&apos;)
+        // .vue file takes precedence over other extensions
+        if (/\.vue$/.test(page) || !files[key]) {
+          files[key] = page.replace(/([&apos;&quot;])/g, &apos;\\$1&apos;)
+        }
+      }
+      templateVars.router.routes = createRoutes({
+        files: Object.values(files),
+        srcDir: this.options.srcDir,
+        pagesDir: this.options.dir.pages,
+        routeNameSplitter,
+        supportedExtensions: this.supportedExtensions,
+        trailingSlash
+      })
+    } else { // If user defined a custom method to create routes
+      templateVars.router.routes = await this.options.build.createRoutes(
+        this.options.srcDir
+      )
+    }
+
+    await this.nuxt.callHook(
+      &apos;build:extendRoutes&apos;,
+      templateVars.router.routes,
+      r
+    )
+    // router.extendRoutes method
+    if (typeof this.options.router.extendRoutes === &apos;function&apos;) {
+      // let the user extend the routes
+      const extendedRoutes = await this.options.router.extendRoutes(
+        templateVars.router.routes,
+        r
+      )
+      // Only overwrite routes when something is returned for backwards compatibility
+      if (extendedRoutes !== undefined) {
+        templateVars.router.routes = extendedRoutes
+      }
+    }
+
+    // Make routes accessible for other modules and webpack configs
+    this.routes = templateVars.router.routes
+  }
+
+  async resolveStore ({ templateVars, templateFiles }) {
+    // Add store if needed
+    if (!this.options.features.store || !this.options.store) {
+      return
+    }
+
+    templateVars.storeModules = (await this.resolveRelative(this.options.dir.store))
+      .sort(({ src: p1 }, { src: p2 }) =&gt; {
+        // modules are sorted from low to high priority (for overwriting properties)
+        let res = p1.split(&apos;/&apos;).length - p2.split(&apos;/&apos;).length
+        if (res === 0 &amp;&amp; p1.includes(&apos;/index.&apos;)) {
+          res = -1
+        } else if (res === 0 &amp;&amp; p2.includes(&apos;/index.&apos;)) {
+          res = 1
+        }
+        return res
+      })
+
+    templateFiles.push(&apos;store.js&apos;)
+  }
+
+  async resolveMiddleware ({ templateVars, templateFiles }) {
+    if (!this.options.features.middleware) {
+      return
+    }
+
+    const middleware = await this.resolveRelative(this.options.dir.middleware)
+    const extRE = new RegExp(`\\.(${this.supportedExtensions.join(&apos;|&apos;)})$`)
+    templateVars.middleware = middleware.map(({ src }) =&gt; {
+      const name = src.replace(extRE, &apos;&apos;)
+      const dst = this.relativeToBuild(this.options.srcDir, this.options.dir.middleware, src)
+      return { name, src, dst }
+    })
+
+    templateFiles.push(&apos;middleware.js&apos;)
+  }
+
+  async resolveCustomTemplates (templateContext) {
+    // Sanitize custom template files
+    this.options.build.templates = this.options.build.templates.map((t) =&gt; {
+      const src = t.src || t
+      return {
+        src: r(this.options.srcDir, src),
+        dst: t.dst || path.basename(src),
+        custom: true,
+        ...(typeof t === &apos;object&apos; ? t : undefined)
+      }
+    })
+
+    const customTemplateFiles = this.options.build.templates.map(t =&gt; t.dst || path.basename(t.src || t))
+
+    const templatePaths = uniq([
+      // Modules &amp; user provided templates
+      // first custom to keep their index
+      ...customTemplateFiles,
+      // @nuxt/vue-app templates
+      ...templateContext.templateFiles
+    ])
+
+    const appDir = path.resolve(this.options.srcDir, this.options.dir.app)
+
+    templateContext.templateFiles = await Promise.all(templatePaths.map(async (file) =&gt; {
+      // Use custom file if provided in build.templates[]
+      const customTemplateIndex = customTemplateFiles.indexOf(file)
+      const customTemplate = customTemplateIndex !== -1 ? this.options.build.templates[customTemplateIndex] : null
+      let src = customTemplate ? (customTemplate.src || customTemplate) : r(this.template.dir, file)
+
+      // Allow override templates using a file with same name in ${srcDir}/app
+      const customAppFile = path.resolve(this.options.srcDir, this.options.dir.app, file)
+      const customAppFileExists = customAppFile.startsWith(appDir) &amp;&amp; await fsExtra.exists(customAppFile)
+      if (customAppFileExists) {
+        src = customAppFile
+      }
+
+      return {
+        src,
+        dst: file,
+        custom: Boolean(customAppFileExists || customTemplate),
+        options: (customTemplate &amp;&amp; customTemplate.options) || {}
+      }
+    }))
+  }
+
+  async resolveLoadingIndicator ({ templateFiles }) {
+    if (!this.options.loadingIndicator.name) {
+      return
+    }
+    let indicatorPath = path.resolve(
+      this.template.dir,
+      &apos;views/loading&apos;,
+      this.options.loadingIndicator.name + &apos;.html&apos;
+    )
+
+    let customIndicator = false
+    if (!await fsExtra.exists(indicatorPath)) {
+      indicatorPath = this.nuxt.resolver.resolveAlias(
+        this.options.loadingIndicator.name
+      )
+
+      if (await fsExtra.exists(indicatorPath)) {
+        customIndicator = true
+      } else {
+        indicatorPath = null
+      }
+    }
+
+    if (!indicatorPath) {
+      consola.error(
+        `Could not fetch loading indicator: ${
+          this.options.loadingIndicator.name
+        }`
+      )
+      return
+    }
+
+    templateFiles.push({
+      src: indicatorPath,
+      dst: &apos;loading.html&apos;,
+      custom: customIndicator,
+      options: this.options.loadingIndicator
+    })
+  }
+
+  async compileTemplates (templateContext) {
+    // Prepare template options
+    const { templateVars, templateFiles, templateOptions } = templateContext
+
+    await this.nuxt.callHook(&apos;build:templates&apos;, {
+      templateVars,
+      templatesFiles: templateFiles,
+      resolve: r
+    })
+
+    templateOptions.imports = {
+      ...templateOptions.imports,
+      resolvePath: this.nuxt.resolver.resolvePath,
+      resolveAlias: this.nuxt.resolver.resolveAlias,
+      relativeToBuild: this.relativeToBuild
+    }
+
+    // Interpret and move template files to .nuxt/
+    await Promise.all(
+      templateFiles.map(async (templateFile) =&gt; {
+        const { src, dst, custom } = templateFile
+
+        // Add custom templates to watcher
+        if (custom) {
+          this.options.build.watch.push(src)
+        }
+
+        // Render template to dst
+        const fileContent = await fsExtra.readFile(src, &apos;utf8&apos;)
+
+        let content
+        try {
+          const templateFunction = template(fileContent, templateOptions)
+          content = stripWhitespace(
+            templateFunction({
+              ...templateVars,
+              ...templateFile
+            })
+          )
+        } catch (err) {
+          throw new Error(`Could not compile template ${src}: ${err.message}`)
+        }
+
+        // Ensure parent dir exits and write file
+        const relativePath = r(this.options.buildDir, dst)
+        await fsExtra.outputFile(relativePath, content, &apos;utf8&apos;)
+      })
+    )
+  }
+
+  resolvePlugins () {
+    // Check plugins exist then set alias to their real path
+    return Promise.all(this.plugins.map(async (p) =&gt; {
+      const ext = &apos;{?(.+([^.])),/index.+([^.])}&apos;
+      const pluginFiles = await glob(`${p.src}${ext}`)
+
+      if (!pluginFiles || pluginFiles.length === 0) {
+        throw new Error(`Plugin not found: ${p.src}`)
+      }
+
+      if (pluginFiles.length &gt; 1 &amp;&amp; !isIndexFileAndFolder(pluginFiles)) {
+        consola.warn({
+          message: `Found ${pluginFiles.length} plugins that match the configuration, suggest to specify extension:`,
+          additional: &apos;\n&apos; + pluginFiles.map(x =&gt; `- ${x}`).join(&apos;\n&apos;)
+        })
+      }
+
+      p.src = this.relativeToBuild(p.src)
+    }))
+  }
+
+  // TODO: Uncomment when generateConfig enabled again
+  // async generateConfig() {
+  //   const config = path.resolve(this.options.buildDir, &apos;build.config.js&apos;)
+  //   const options = omit(this.options, Options.unsafeKeys)
+  //   await fsExtra.writeFile(
+  //     config,
+  //     `export default ${JSON.stringify(options, null, &apos;  &apos;)}`,
+  //     &apos;utf8&apos;
+  //   )
+  // }
+
+  createFileWatcher (patterns, events, listener, watcherCreatedCallback) {
+    const options = this.options.watchers.chokidar
+    const watcher = chokidar.watch(patterns, options)
+
+    for (const event of events) {
+      watcher.on(event, listener)
+    }
+
+    // TODO: due to fixes in chokidar this isnt used anymore and could be removed in Nuxt v3
+    const { rewatchOnRawEvents } = this.options.watchers
+    if (rewatchOnRawEvents &amp;&amp; Array.isArray(rewatchOnRawEvents)) {
+      watcher.on(&apos;raw&apos;, (_event) =&gt; {
+        if (rewatchOnRawEvents.includes(_event)) {
+          watcher.close()
+
+          listener()
+          this.createFileWatcher(patterns, events, listener, watcherCreatedCallback)
+        }
+      })
+    }
+
+    if (typeof watcherCreatedCallback === &apos;function&apos;) {
+      watcherCreatedCallback(watcher)
+    }
+  }
+
+  assignWatcher (key) {
+    return (watcher) =&gt; {
+      if (this.watchers[key]) {
+        this.watchers[key].close()
+      }
+      this.watchers[key] = watcher
+    }
+  }
+
+  watchClient () {
+    let patterns = [
+      r(this.options.srcDir, this.options.dir.layouts),
+      r(this.options.srcDir, this.options.dir.middleware)
+    ]
+
+    if (this.options.store) {
+      patterns.push(r(this.options.srcDir, this.options.dir.store))
+    }
+
+    if (this._nuxtPages &amp;&amp; !this._defaultPage) {
+      patterns.push(r(this.options.srcDir, this.options.dir.pages))
+    }
+
+    patterns = patterns.map((path, ...args) =&gt; upath.normalizeSafe(this.globPathWithExtensions(path), ...args))
+
+    const refreshFiles = debounce(() =&gt; this.generateRoutesAndFiles(), 200)
+
+    // Watch for src Files
+    this.createFileWatcher(patterns, [&apos;add&apos;, &apos;unlink&apos;], refreshFiles, this.assignWatcher(&apos;files&apos;))
+
+    // Watch for custom provided files
+    const customPatterns = uniq([
+      ...this.options.build.watch,
+      ...Object.values(omit(this.options.build.styleResources, [&apos;options&apos;]))
+    ]).map(upath.normalizeSafe)
+
+    if (customPatterns.length === 0) {
+      return
+    }
+
+    this.createFileWatcher(customPatterns, [&apos;change&apos;], refreshFiles, this.assignWatcher(&apos;custom&apos;))
+
+    // Watch for app/ files
+    this.createFileWatcher([r(this.options.srcDir, this.options.dir.app)], [&apos;add&apos;, &apos;change&apos;, &apos;unlink&apos;], refreshFiles, this.assignWatcher(&apos;app&apos;))
+  }
+
+  serverMiddlewareHMR () {
+    // Check nuxt.server dependency
+    if (!this.nuxt.server) {
+      return
+    }
+
+    // Get registered server middleware with path
+    const entries = this.nuxt.server.serverMiddlewarePaths()
+
+    // Resolve dependency tree
+    const deps = new Set()
+    const dep2Entry = {}
+
+    for (const entry of entries) {
+      for (const dep of scanRequireTree(entry)) {
+        deps.add(dep)
+        if (!dep2Entry[dep]) {
+          dep2Entry[dep] = new Set()
+        }
+        dep2Entry[dep].add(entry)
+      }
+    }
+
+    // Create watcher
+    this.createFileWatcher(
+      Array.from(deps),
+      [&apos;all&apos;],
+      debounce((event, fileName) =&gt; {
+        if (!dep2Entry[fileName]) {
+          return // #7097
+        }
+        for (const entry of dep2Entry[fileName]) {
+          // Reload entry
+          let newItem
+          try {
+            newItem = this.nuxt.server.replaceMiddleware(entry, entry)
+          } catch (error) {
+            consola.error(error)
+            consola.error(`[HMR Error]: ${error}`)
+          }
+
+          if (!newItem) {
+            // Full reload if HMR failed
+            return this.nuxt.callHook(&apos;watch:restart&apos;, { event, path: fileName })
+          }
+
+          // Log
+          consola.info(`[HMR] ${chalk.cyan(newItem.route || &apos;/&apos;)} (${chalk.grey(fileName)})`)
+        }
+        // Tree may be changed so recreate watcher
+        this.serverMiddlewareHMR()
+      }, 200),
+      this.assignWatcher(&apos;serverMiddleware&apos;)
+    )
+  }
+
+  watchRestart () {
+    const nuxtRestartWatch = [
+      // Custom watchers
+      ...this.options.watch
+    ].map(this.nuxt.resolver.resolveAlias)
+
+    if (this.ignore.ignoreFile) {
+      nuxtRestartWatch.push(this.ignore.ignoreFile)
+    }
+
+    if (this.options._envConfig &amp;&amp; this.options._envConfig.dotenv) {
+      nuxtRestartWatch.push(this.options._envConfig.dotenv)
+    }
+
+    // If default page displayed, watch for first page creation
+    if (this._nuxtPages &amp;&amp; this._defaultPage) {
+      nuxtRestartWatch.push(path.join(this.options.srcDir, this.options.dir.pages))
+    }
+    // If store not activated, watch for a file in the directory
+    if (!this.options.store) {
+      nuxtRestartWatch.push(path.join(this.options.srcDir, this.options.dir.store))
+    }
+
+    this.createFileWatcher(
+      nuxtRestartWatch,
+      [&apos;all&apos;],
+      async (event, fileName) =&gt; {
+        if ([&apos;add&apos;, &apos;change&apos;, &apos;unlink&apos;].includes(event) === false) {
+          return
+        }
+        await this.nuxt.callHook(&apos;watch:fileChanged&apos;, this, fileName) // Legacy
+        await this.nuxt.callHook(&apos;watch:restart&apos;, { event, path: fileName })
+      },
+      this.assignWatcher(&apos;restart&apos;)
+    )
+  }
+
+  unwatch () {
+    for (const watcher in this.watchers) {
+      this.watchers[watcher].close()
+    }
+  }
+
+  async close () {
+    if (this.__closed) {
+      return
+    }
+    this.__closed = true
+
+    // Unwatch
+    this.unwatch()
+
+    // Close bundleBuilder
+    if (typeof this.bundleBuilder.close === &apos;function&apos;) {
+      await this.bundleBuilder.close()
+    }
+  }
+}
+
+const STATUS = {
+  INITIAL: 1,
+  BUILD_DONE: 2,
+  BUILDING: 3
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

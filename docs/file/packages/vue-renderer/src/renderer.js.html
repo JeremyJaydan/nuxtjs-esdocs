@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">packages/vue-renderer/src/renderer.js | nuxtjs-esdocs</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/JeremyJaydan/nuxtjs-esdocs"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-src">builder/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/builder.js~Builder.html">Builder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/ignore.js~Ignore.html">Ignore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-build">build</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getBuilder">getBuilder</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-src-context">builder/src/context</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/context/build.js~BuildContext.html">BuildContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/context/template.js~TemplateContext.html">TemplateContext</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-test---utils--">builder/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createNuxt">createNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src">cli/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/cli/src/command.js~NuxtCommand.html">NuxtCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-builder">builder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-core">core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generator">generator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-importModule">importModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-server">server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-webpack">webpack</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-listCommands">listCommands</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-run">run</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setup">setup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src-commands">cli/src/commands</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCommand">getCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src-utils">cli/src/utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-showBanner">showBanner</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxtConfig">loadNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-maxCharsPerLine">maxCharsPerLine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNuxtDir">isNuxtDir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-box">box</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-colorize">colorize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-errorBox">errorBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fatalBox">fatalBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-foldLines">foldLines</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indent">indent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indentLines">indentLines</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-successBox">successBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-warningBox">warningBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compareSnapshots">compareSnapshots</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ensureBuild">ensureBuild</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generate">generate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-snapshot">snapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createLock">createLock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-forceExit">forceExit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatPath">formatPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizeArg">normalizeArg</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getFormattedMemoryUsage">getFormattedMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMemoryUsage">getMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-showMemoryUsage">showMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-serve">serve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getWebpackConfig">getWebpackConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-forceExitTimeout">forceExitTimeout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-optionSpaces">optionSpaces</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startSpaces">startSpaces</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eventsMapping">eventsMapping</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-test-fixtures">cli/test/fixtures</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-test-utils">cli/test/utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-localPath">localPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockBuilder">mockBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetBuilder">mockGetBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetGenerator">mockGetGenerator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxt">mockGetNuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxtConfig">mockGetNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxtStart">mockGetNuxtStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockNuxt">mockNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#config-src">config/src</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxtConfig">loadNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getNuxtConfig">getNuxtConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#config-src-config">config/src/config</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_app">_app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_common">_common</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-build">build</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cli">cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generate">generate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDefaultNuxtConfig">getDefaultNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-messages">messages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-modes">modes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-router">router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-server">server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaultNuxtConfigFile">defaultNuxtConfigFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-src">core/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/module.js~ModuleContainer.html">ModuleContainer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/nuxt.js~Nuxt.html">Nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/resolver.js~Resolver.html">Resolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxt">loadNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#generator-src">generator/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/generator/src/generator.js~Generator.html">Generator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getGenerator">getGenerator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#generator-test---utils--">generator/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createNuxt">createNuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hookCalls">hookCalls</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#server-src">server/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/context.js~ServerContext.html">ServerContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/listener.js~Listener.html">Listener</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderAndGetWindow">renderAndGetWindow</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#server-src-middleware">server/src/middleware</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-error">error</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-timing">timing</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils-src">utils/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/utils/src/timer.js~Timer.html">Timer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearRequireCache">clearRequireCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRequire">createRequire</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPKG">getPKG</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getRequireCacheItem">getRequireCacheItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExternalDependency">isExternalDependency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHMRCompatible">isHMRCompatible</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-requireModule">requireModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-resolveModule">resolveModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-scanRequireTree">scanRequireTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tryRequire">tryRequire</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tryResolve">tryResolve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-determineGlobals">determineGlobals</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getContext">getContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFullStatic">isFullStatic</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeHtml">encodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNonEmptyString">isNonEmptyString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPureObject">isPureObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-stripWhitespace">stripWhitespace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wrapArray">wrapArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createLockPath">createLockPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLockOptions">getLockOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLockPath">getLockPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lock">lock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isModernBrowser">isModernBrowser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isModernRequest">isModernRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-defineAlias">defineAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMainModule">getMainModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isIndexFileAndFolder">isIndexFileAndFolder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-r">r</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-relativeTo">relativeTo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startsWithAlias">startsWithAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wChunk">wChunk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wp">wp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRoutes">createRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flatRoutes">flatRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-guardDir">guardDir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-promisifyRoute">promisifyRoute</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sortRoutes">sortRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizeFunctions">normalizeFunctions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-serializeFunction">serializeFunction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chainFn">chainFn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parallel">parallel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sequence">sequence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-timeout">timeout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-waitFor">waitFor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MODES">MODES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TARGETS">TARGETS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-urlJoin">urlJoin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaultLockOptions">defaultLockOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-lockPaths">lockPaths</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ModernBrowsers">ModernBrowsers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-safariNoModuleFix">safariNoModuleFix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isWindows">isWindows</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startsWithRootAlias">startsWithRootAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startsWithSrcAlias">startsWithSrcAlias</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-src">vue-app/src</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-template">template</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-template">vue-app/template</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-installJsonp">installJsonp</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-test---utils--">vue-app/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compileTemplate">compileTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-importComponent">importComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-vmTick">vmTick</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-renderer-src">vue-renderer/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderer.js~VueRenderer.html">VueRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-renderer-src-renderers">vue-renderer/src/renderers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/base.js~BaseRenderer.html">BaseRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/modern.js~ModernRenderer.html">ModernRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/spa.js~SPARenderer.html">SPARenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/ssr.js~SSRRenderer.html">SSRRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src">webpack/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/builder.js~WebpackBundler.html">WebpackBundler</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-config">webpack/src/config</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/base.js~WebpackBaseConfig.html">WebpackBaseConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/client.js~WebpackClientConfig.html">WebpackClientConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/modern.js~WebpackModernConfig.html">WebpackModernConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/server.js~WebpackServerConfig.html">WebpackServerConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-plugins">webpack/src/plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/warning-ignore.js~WarningIgnorePlugin.html">WarningIgnorePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/watchpack.js~NodeWatchFileSystem.html">NodeWatchFileSystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/watchpack.js~Watchpack2Plugin.html">Watchpack2Plugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-plugins-vue">webpack/src/plugins/vue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/client.js~VueSSRClientPlugin.html">VueSSRClientPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/cors.js~CorsPlugin.html">CorsPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/modern.js~ModernModePlugin.html">ModernModePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/server.js~VueSSRServerPlugin.html">VueSSRServerPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-extractQueryPartJS">extractQueryPartJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCSS">isCSS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isJS">isJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validate">validate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-utils">webpack/src/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/async-mfs.js~AsyncMFS.html">AsyncMFS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/perf-loader.js~PerfLoader.html">PerfLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/postcss-v8.js~PostcssConfig.html">PostcssConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/postcss.js~PostcssConfig.html">PostcssConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/style-loader.js~StyleLoader.html">StyleLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-orderPresets">orderPresets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-orderPresets">orderPresets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reservedVueTags">reservedVueTags</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">packages/vue-renderer/src/renderer.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import path from &apos;path&apos;
+import fs from &apos;fs-extra&apos;
+import consola from &apos;consola&apos;
+import { template } from &apos;lodash&apos;
+import { TARGETS, isModernRequest, urlJoin, waitFor } from &apos;@nuxt/utils&apos;
+import { normalizeURL } from &apos;ufo&apos;
+import defu from &apos;defu&apos;
+
+import SPARenderer from &apos;./renderers/spa&apos;
+import SSRRenderer from &apos;./renderers/ssr&apos;
+import ModernRenderer from &apos;./renderers/modern&apos;
+
+export default class VueRenderer {
+  constructor (context) {
+    this.serverContext = context
+    this.options = this.serverContext.options
+
+    // Will be set by createRenderer
+    this.renderer = {
+      ssr: undefined,
+      modern: undefined,
+      spa: undefined
+    }
+
+    // Renderer runtime resources
+    Object.assign(this.serverContext.resources, {
+      clientManifest: undefined,
+      modernManifest: undefined,
+      serverManifest: undefined,
+      ssrTemplate: undefined,
+      spaTemplate: undefined,
+      errorTemplate: this.parseTemplate(&apos;Nuxt Internal Server Error&apos;)
+    })
+
+    // Default status
+    this._state = &apos;created&apos;
+    this._error = null
+  }
+
+  ready () {
+    if (!this._readyPromise) {
+      this._state = &apos;loading&apos;
+      this._readyPromise = this._ready()
+        .then(() =&gt; {
+          this._state = &apos;ready&apos;
+          return this
+        })
+        .catch((error) =&gt; {
+          this._state = &apos;error&apos;
+          this._error = error
+          throw error
+        })
+    }
+
+    return this._readyPromise
+  }
+
+  async _ready () {
+    // Resolve dist path
+    this.distPath = path.resolve(this.options.buildDir, &apos;dist&apos;, &apos;server&apos;)
+
+    // -- Development mode --
+    if (this.options.dev) {
+      this.serverContext.nuxt.hook(&apos;build:resources&apos;, mfs =&gt; this.loadResources(mfs))
+      return
+    }
+
+    // -- Production mode --
+
+    // Try once to load SSR resources from fs
+    await this.loadResources(fs)
+
+    // Without using `nuxt start` (programmatic, tests and generate)
+    if (!this.options._start) {
+      this.serverContext.nuxt.hook(&apos;build:resources&apos;, () =&gt; this.loadResources(fs))
+      return
+    }
+
+    // Verify resources
+    if (this.options.modern &amp;&amp; !this.isModernReady) {
+      throw new Error(
+        `No modern build files found in ${this.distPath}.\nUse either \`nuxt build --modern\` or \`modern\` option to build modern files.`
+      )
+    } else if (!this.isReady) {
+      throw new Error(
+        `No build files found in ${this.distPath}.\nUse either \`nuxt build\` or \`builder.build()\` or start nuxt in development mode.`
+      )
+    }
+  }
+
+  async loadResources (_fs) {
+    const updated = []
+
+    const readResource = async (fileName, encoding) =&gt; {
+      try {
+        const fullPath = path.resolve(this.distPath, fileName)
+
+        if (!await _fs.exists(fullPath)) {
+          return
+        }
+        const contents = await _fs.readFile(fullPath, encoding)
+
+        return contents
+      } catch (err) {
+        consola.error(&apos;Unable to load resource:&apos;, fileName, err)
+      }
+    }
+
+    for (const resourceName in this.resourceMap) {
+      const { fileName, transform, encoding } = this.resourceMap[resourceName]
+
+      // Load resource
+      let resource = await readResource(fileName, encoding)
+
+      // Skip unavailable resources
+      if (!resource) {
+        continue
+      }
+
+      // Apply transforms
+      if (typeof transform === &apos;function&apos;) {
+        resource = await transform(resource, { readResource })
+      }
+
+      // Update resource
+      this.serverContext.resources[resourceName] = resource
+      updated.push(resourceName)
+    }
+
+    // Load templates
+    await this.loadTemplates()
+
+    await this.serverContext.nuxt.callHook(&apos;render:resourcesLoaded&apos;, this.serverContext.resources)
+
+    // Detect if any resource updated
+    if (updated.length &gt; 0) {
+      // Create new renderer
+      this.createRenderer()
+    }
+  }
+
+  async loadTemplates () {
+    // Reload error template
+    const errorTemplatePath = path.resolve(this.options.buildDir, &apos;views/error.html&apos;)
+
+    if (await fs.exists(errorTemplatePath)) {
+      const errorTemplate = await fs.readFile(errorTemplatePath, &apos;utf8&apos;)
+      this.serverContext.resources.errorTemplate = this.parseTemplate(errorTemplate)
+    }
+
+    // Reload loading template
+    const loadingHTMLPath = path.resolve(this.options.buildDir, &apos;loading.html&apos;)
+
+    if (await fs.exists(loadingHTMLPath)) {
+      this.serverContext.resources.loadingHTML = await fs.readFile(loadingHTMLPath, &apos;utf8&apos;)
+      this.serverContext.resources.loadingHTML = this.serverContext.resources.loadingHTML.replace(/\r|\n|[\t\s]{3,}/g, &apos;&apos;)
+    } else {
+      this.serverContext.resources.loadingHTML = &apos;&apos;
+    }
+  }
+
+  // TODO: Remove in Nuxt 3
+  get noSSR () { /* Backward compatibility */
+    return this.options.render.ssr === false
+  }
+
+  get SSR () {
+    return this.options.render.ssr === true
+  }
+
+  get isReady () {
+    // SPA
+    if (!this.serverContext.resources.spaTemplate || !this.renderer.spa) {
+      return false
+    }
+
+    // SSR
+    if (this.SSR &amp;&amp; (!this.serverContext.resources.ssrTemplate || !this.renderer.ssr)) {
+      return false
+    }
+
+    return true
+  }
+
+  get isModernReady () {
+    return this.isReady &amp;&amp; this.serverContext.resources.modernManifest
+  }
+
+  // TODO: Remove in Nuxt 3
+  get isResourcesAvailable () { /* Backward compatibility */
+    return this.isReady
+  }
+
+  detectModernBuild () {
+    const { options, resources } = this.serverContext
+    if ([false, &apos;client&apos;, &apos;server&apos;].includes(options.modern)) {
+      return
+    }
+
+    const isExplicitStaticModern = options.target === TARGETS.static &amp;&amp; options.modern
+    if (!resources.modernManifest &amp;&amp; !isExplicitStaticModern) {
+      options.modern = false
+      return
+    }
+
+    options.modern = options.render.ssr ? &apos;server&apos; : &apos;client&apos;
+    consola.info(`Modern bundles are detected. Modern mode (\`${options.modern}\`) is enabled now.`)
+  }
+
+  createRenderer () {
+    // Resource clientManifest is always required
+    if (!this.serverContext.resources.clientManifest) {
+      return
+    }
+
+    this.detectModernBuild()
+
+    // Create SPA renderer
+    if (this.serverContext.resources.spaTemplate) {
+      this.renderer.spa = new SPARenderer(this.serverContext)
+    }
+
+    // Skip the rest if SSR resources are not available
+    if (this.serverContext.resources.ssrTemplate &amp;&amp; this.serverContext.resources.serverManifest) {
+      // Create bundle renderer for SSR
+      this.renderer.ssr = new SSRRenderer(this.serverContext)
+
+      if (this.options.modern !== false) {
+        this.renderer.modern = new ModernRenderer(this.serverContext)
+      }
+    }
+  }
+
+  renderSPA (renderContext) {
+    return this.renderer.spa.render(renderContext)
+  }
+
+  renderSSR (renderContext) {
+    // Call renderToString from the bundleRenderer and generate the HTML (will update the renderContext as well)
+    const renderer = renderContext.modern ? this.renderer.modern : this.renderer.ssr
+    return renderer.render(renderContext)
+  }
+
+  async renderRoute (url, renderContext = {}, _retried = 0) {
+    /* istanbul ignore if */
+    if (!this.isReady) {
+      // Fall-back to loading-screen if enabled
+      if (this.options.build.loadingScreen) {
+        // Tell nuxt middleware to use `server:nuxt:renderLoading hook
+        return false
+      }
+
+      // Retry
+      const retryLimit = this.options.dev ? 60 : 3
+      if (_retried &lt; retryLimit &amp;&amp; this._state !== &apos;error&apos;) {
+        await this.ready().then(() =&gt; waitFor(1000))
+        return this.renderRoute(url, renderContext, _retried + 1)
+      }
+
+      // Throw Error
+      switch (this._state) {
+        case &apos;created&apos;:
+          throw new Error(&apos;Renderer ready() is not called! Please ensure `nuxt.ready()` is called and awaited.&apos;)
+        case &apos;loading&apos;:
+          throw new Error(&apos;Renderer is loading.&apos;)
+        case &apos;error&apos;:
+          throw this._error
+        case &apos;ready&apos;:
+          throw new Error(`Renderer resources are not loaded! Please check possible console errors and ensure dist (${this.distPath}) exists.`)
+        default:
+          throw new Error(&apos;Renderer is in unknown state!&apos;)
+      }
+    }
+
+    // Log rendered url
+    consola.debug(`Rendering url ${url}`)
+
+    // Add url to the renderContext
+    renderContext.url = normalizeURL(url)
+
+    // Add target to the renderContext
+    renderContext.target = this.options.target
+
+    const { req = {}, res = {} } = renderContext
+
+    // renderContext.spa
+    if (renderContext.spa === undefined) {
+      // TODO: Remove reading from renderContext.res in Nuxt3
+      renderContext.spa = !this.SSR || req.spa || res.spa
+    }
+
+    // renderContext.modern
+    if (renderContext.modern === undefined) {
+      const modernMode = this.options.modern
+      renderContext.modern = modernMode === &apos;client&apos; || isModernRequest(req, modernMode)
+    }
+
+    // Set runtime config on renderContext
+    renderContext.runtimeConfig = {
+      private: renderContext.spa ? {} : defu(this.options.privateRuntimeConfig, this.options.publicRuntimeConfig),
+      public: { ...this.options.publicRuntimeConfig }
+    }
+
+    // Call renderContext hook
+    await this.serverContext.nuxt.callHook(&apos;vue-renderer:context&apos;, renderContext)
+
+    // Render SPA or SSR
+    return renderContext.spa
+      ? this.renderSPA(renderContext)
+      : this.renderSSR(renderContext)
+  }
+
+  get resourceMap () {
+    const publicPath = urlJoin(this.options.app.cdnURL, this.options.app.assetsPath)
+    return {
+      clientManifest: {
+        fileName: &apos;client.manifest.json&apos;,
+        transform: src =&gt; Object.assign(JSON.parse(src), { publicPath })
+      },
+      modernManifest: {
+        fileName: &apos;modern.manifest.json&apos;,
+        transform: src =&gt; Object.assign(JSON.parse(src), { publicPath })
+      },
+      serverManifest: {
+        fileName: &apos;server.manifest.json&apos;,
+        // BundleRenderer needs resolved contents
+        transform: async (src, { readResource }) =&gt; {
+          const serverManifest = JSON.parse(src)
+
+          const readResources = async (obj) =&gt; {
+            const _obj = {}
+            await Promise.all(Object.keys(obj).map(async (key) =&gt; {
+              _obj[key] = await readResource(obj[key])
+            }))
+            return _obj
+          }
+
+          const [files, maps] = await Promise.all([
+            readResources(serverManifest.files),
+            readResources(serverManifest.maps)
+          ])
+
+          // Try to parse sourcemaps
+          for (const map in maps) {
+            if (maps[map] &amp;&amp; maps[map].version) {
+              continue
+            }
+            try {
+              maps[map] = JSON.parse(maps[map])
+            } catch (e) {
+              maps[map] = { version: 3, sources: [], mappings: &apos;&apos; }
+            }
+          }
+
+          return {
+            ...serverManifest,
+            files,
+            maps
+          }
+        }
+      },
+      ssrTemplate: {
+        fileName: &apos;index.ssr.html&apos;,
+        transform: src =&gt; this.parseTemplate(src)
+      },
+      spaTemplate: {
+        fileName: &apos;index.spa.html&apos;,
+        transform: src =&gt; this.parseTemplate(src)
+      }
+    }
+  }
+
+  parseTemplate (templateStr) {
+    return template(templateStr, {
+      interpolate: /{{([\s\S]+?)}}/g,
+      evaluate: /{%([\s\S]+?)%}/g
+    })
+  }
+
+  close () {
+    if (this.__closed) {
+      return
+    }
+    this.__closed = true
+
+    for (const key in this.renderer) {
+      delete this.renderer[key]
+    }
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

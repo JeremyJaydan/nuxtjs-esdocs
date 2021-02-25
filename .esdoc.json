@@ -1,0 +1,19 @@
+{
+  "source": "./nuxt.js/packages",
+  "destination": "./docs",
+  "plugins": [
+    {"name": "esdoc-standard-plugin"},
+    {"name": "esdoc-ecmascript-proposal-plugin", "option": {"all": true}},
+    {"name": "esdoc-accessor-plugin", "option": {"access": ["public", "protected", "private"], "autoPrivate": true}},
+    {
+      "name": "esdoc-coverage-plugin", 
+      "option": {
+        "enable": true,
+        "kind": ["class", "method", "member", "get", "set", "constructor", "function", "variable"]
+      }
+    },
+    {"name": "esdoc-flow-type-plugin", "option": {"enable": true}},
+    {"name": "esdoc-undocumented-identifier-plugin", "option": {"enable": true}},
+    {"name": "esdoc-unexported-identifier-plugin", "option": {"enable": false}}
+  ]
+}

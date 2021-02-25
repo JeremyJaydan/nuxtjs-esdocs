@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">packages/generator/src/generator.js | nuxtjs-esdocs</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/JeremyJaydan/nuxtjs-esdocs"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-src">builder/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/builder.js~Builder.html">Builder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/ignore.js~Ignore.html">Ignore</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-build">build</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getBuilder">getBuilder</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-src-context">builder/src/context</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/context/build.js~BuildContext.html">BuildContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/builder/src/context/template.js~TemplateContext.html">TemplateContext</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#builder-test---utils--">builder/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createNuxt">createNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src">cli/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/cli/src/command.js~NuxtCommand.html">NuxtCommand</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-builder">builder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-core">core</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generator">generator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-importModule">importModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-server">server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-webpack">webpack</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-listCommands">listCommands</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-run">run</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-setup">setup</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src-commands">cli/src/commands</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getCommand">getCommand</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-src-utils">cli/src/utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-showBanner">showBanner</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxtConfig">loadNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-maxCharsPerLine">maxCharsPerLine</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNuxtDir">isNuxtDir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-box">box</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-colorize">colorize</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-errorBox">errorBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-fatalBox">fatalBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-foldLines">foldLines</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indent">indent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-indentLines">indentLines</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-successBox">successBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-warningBox">warningBox</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compareSnapshots">compareSnapshots</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-ensureBuild">ensureBuild</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generate">generate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-snapshot">snapshot</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createLock">createLock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-forceExit">forceExit</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-formatPath">formatPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizeArg">normalizeArg</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getFormattedMemoryUsage">getFormattedMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMemoryUsage">getMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-showMemoryUsage">showMemoryUsage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-serve">serve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getWebpackConfig">getWebpackConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-forceExitTimeout">forceExitTimeout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-optionSpaces">optionSpaces</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startSpaces">startSpaces</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-eventsMapping">eventsMapping</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-test-fixtures">cli/test/fixtures</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#cli-test-utils">cli/test/utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-localPath">localPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockBuilder">mockBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetBuilder">mockGetBuilder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetGenerator">mockGetGenerator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxt">mockGetNuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxtConfig">mockGetNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockGetNuxtStart">mockGetNuxtStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-mockNuxt">mockNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#config-src">config/src</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxtConfig">loadNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getNuxtConfig">getNuxtConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#config-src-config">config/src/config</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_app">_app</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-_common">_common</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-build">build</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-cli">cli</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-generate">generate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getDefaultNuxtConfig">getDefaultNuxtConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-messages">messages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-modes">modes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-render">render</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-router">router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-server">server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaultNuxtConfigFile">defaultNuxtConfigFile</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#core-src">core/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/module.js~ModuleContainer.html">ModuleContainer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/nuxt.js~Nuxt.html">Nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/core/src/resolver.js~Resolver.html">Resolver</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-loadNuxt">loadNuxt</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#generator-src">generator/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/generator/src/generator.js~Generator.html">Generator</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getGenerator">getGenerator</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#generator-test---utils--">generator/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createNuxt">createNuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-hookCalls">hookCalls</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#server-src">server/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/context.js~ServerContext.html">ServerContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/listener.js~Listener.html">Listener</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/server/src/server.js~Server.html">Server</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderAndGetWindow">renderAndGetWindow</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#server-src-middleware">server/src/middleware</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-error">error</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-nuxt">nuxt</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-timing">timing</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils-src">utils/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/utils/src/timer.js~Timer.html">Timer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-clearRequireCache">clearRequireCache</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRequire">createRequire</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getPKG">getPKG</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getRequireCacheItem">getRequireCacheItem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExternalDependency">isExternalDependency</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isHMRCompatible">isHMRCompatible</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-requireModule">requireModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-resolveModule">resolveModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-scanRequireTree">scanRequireTree</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tryRequire">tryRequire</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-tryResolve">tryResolve</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-determineGlobals">determineGlobals</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getContext">getContext</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isFullStatic">isFullStatic</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-encodeHtml">encodeHtml</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isNonEmptyString">isNonEmptyString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isPureObject">isPureObject</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isString">isString</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isUrl">isUrl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-stripWhitespace">stripWhitespace</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wrapArray">wrapArray</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createLockPath">createLockPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLockOptions">getLockOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getLockPath">getLockPath</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-lock">lock</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isModernBrowser">isModernBrowser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isModernRequest">isModernRequest</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-defineAlias">defineAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-getMainModule">getMainModule</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isIndexFileAndFolder">isIndexFileAndFolder</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-r">r</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-relativeTo">relativeTo</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-startsWithAlias">startsWithAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wChunk">wChunk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-wp">wp</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-createRoutes">createRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-flatRoutes">flatRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-guardDir">guardDir</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-promisifyRoute">promisifyRoute</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sortRoutes">sortRoutes</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-normalizeFunctions">normalizeFunctions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-serializeFunction">serializeFunction</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-chainFn">chainFn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-parallel">parallel</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sequence">sequence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-timeout">timeout</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-waitFor">waitFor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-MODES">MODES</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-TARGETS">TARGETS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-urlJoin">urlJoin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-defaultLockOptions">defaultLockOptions</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-lockPaths">lockPaths</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-ModernBrowsers">ModernBrowsers</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-safariNoModuleFix">safariNoModuleFix</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-isWindows">isWindows</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startsWithRootAlias">startsWithRootAlias</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-startsWithSrcAlias">startsWithSrcAlias</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-src">vue-app/src</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-template">template</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-template">vue-app/template</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-installJsonp">installJsonp</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-app-test---utils--">vue-app/test/__utils__</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-compileTemplate">compileTemplate</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-importComponent">importComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-vmTick">vmTick</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-renderer-src">vue-renderer/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderer.js~VueRenderer.html">VueRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#vue-renderer-src-renderers">vue-renderer/src/renderers</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/base.js~BaseRenderer.html">BaseRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/modern.js~ModernRenderer.html">ModernRenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/spa.js~SPARenderer.html">SPARenderer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/vue-renderer/src/renderers/ssr.js~SSRRenderer.html">SSRRenderer</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src">webpack/src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/builder.js~WebpackBundler.html">WebpackBundler</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-config">webpack/src/config</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/base.js~WebpackBaseConfig.html">WebpackBaseConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/client.js~WebpackClientConfig.html">WebpackClientConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/modern.js~WebpackModernConfig.html">WebpackModernConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/config/server.js~WebpackServerConfig.html">WebpackServerConfig</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-plugins">webpack/src/plugins</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/warning-ignore.js~WarningIgnorePlugin.html">WarningIgnorePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/watchpack.js~NodeWatchFileSystem.html">NodeWatchFileSystem</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/watchpack.js~Watchpack2Plugin.html">Watchpack2Plugin</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-plugins-vue">webpack/src/plugins/vue</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/client.js~VueSSRClientPlugin.html">VueSSRClientPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/cors.js~CorsPlugin.html">CorsPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/modern.js~ModernModePlugin.html">ModernModePlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/plugins/vue/server.js~VueSSRServerPlugin.html">VueSSRServerPlugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-extractQueryPartJS">extractQueryPartJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isCSS">isCSS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isJS">isJS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-validate">validate</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#webpack-src-utils">webpack/src/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/async-mfs.js~AsyncMFS.html">AsyncMFS</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/perf-loader.js~PerfLoader.html">PerfLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/postcss-v8.js~PostcssConfig.html">PostcssConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/postcss.js~PostcssConfig.html">PostcssConfig</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/packages/webpack/src/utils/style-loader.js~StyleLoader.html">StyleLoader</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-orderPresets">orderPresets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-orderPresets">orderPresets</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-reservedVueTags">reservedVueTags</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">packages/generator/src/generator.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import path from &apos;path&apos;
+import chalk from &apos;chalk&apos;
+import consola from &apos;consola&apos;
+import devalue from &apos;devalue&apos;
+import fsExtra from &apos;fs-extra&apos;
+import defu from &apos;defu&apos;
+import htmlMinifier from &apos;html-minifier&apos;
+import { parse } from &apos;node-html-parser&apos;
+import { withTrailingSlash, withoutTrailingSlash } from &apos;ufo&apos;
+
+import { isFullStatic, flatRoutes, isString, isUrl, promisifyRoute, urlJoin, waitFor, requireModule } from &apos;@nuxt/utils&apos;
+
+export default class Generator {
+  constructor (nuxt, builder) {
+    this.nuxt = nuxt
+    this.options = nuxt.options
+    this.builder = builder
+
+    // Set variables
+    this.isFullStatic = isFullStatic(this.options)
+    if (this.isFullStatic) {
+      consola.info(`Full static generation activated`)
+    }
+    this.staticRoutes = path.resolve(this.options.srcDir, this.options.dir.static)
+    this.srcBuiltPath = path.resolve(this.options.buildDir, &apos;dist&apos;, &apos;client&apos;)
+    this.distPath = this.options.generate.dir
+    this.distNuxtPath = path.join(
+      this.distPath,
+      isUrl(this.options.build.publicPath) ? &apos;&apos; : this.options.build.publicPath
+    )
+    // Payloads for full static
+    if (this.isFullStatic) {
+      const { staticAssets, manifest } = this.options.generate
+      this.staticAssetsDir = path.resolve(this.distNuxtPath, staticAssets.dir, staticAssets.version)
+      this.staticAssetsBase = urlJoin(this.options.app.cdnURL, this.options.generate.staticAssets.versionBase)
+      if (manifest) {
+        this.manifest = defu(manifest, {
+          routes: []
+        })
+      }
+    }
+
+    // Shared payload
+    this._payload = null
+    this.setPayload = (payload) =&gt; {
+      this._payload = defu(payload, this._payload)
+    }
+  }
+
+  async generate ({ build = true, init = true } = {}) {
+    consola.debug(&apos;Initializing generator...&apos;)
+    await this.initiate({ build, init })
+
+    consola.debug(&apos;Preparing routes for generate...&apos;)
+    const routes = await this.initRoutes()
+
+    consola.info(&apos;Generating pages&apos; + (this.isFullStatic ? &apos; with full static mode&apos; : &apos;&apos;))
+    const errors = await this.generateRoutes(routes)
+
+    await this.afterGenerate()
+
+    // Save routes manifest for full static
+    if (this.manifest) {
+      await this.nuxt.callHook(&apos;generate:manifest&apos;, this.manifest, this)
+      const manifestPath = path.join(this.staticAssetsDir, &apos;manifest.js&apos;)
+      await fsExtra.ensureDir(this.staticAssetsDir)
+      await fsExtra.writeFile(manifestPath, `__NUXT_JSONP__(&quot;manifest.js&quot;, ${devalue(this.manifest)})`, &apos;utf-8&apos;)
+      consola.success(&apos;Static manifest generated&apos;)
+    }
+
+    // Done hook
+    await this.nuxt.callHook(&apos;generate:done&apos;, this, errors)
+    await this.nuxt.callHook(&apos;export:done&apos;, this, { errors })
+
+    return { errors }
+  }
+
+  async initiate ({ build = true, init = true } = {}) {
+    // Wait for nuxt be ready
+    await this.nuxt.ready()
+
+    // Call before hook
+    await this.nuxt.callHook(&apos;generate:before&apos;, this, this.options.generate)
+    await this.nuxt.callHook(&apos;export:before&apos;, this)
+
+    if (build) {
+      // Add flag to set process.static
+      this.builder.forGenerate()
+
+      // Start build process
+      await this.builder.build()
+    } else {
+      const hasBuilt = await fsExtra.exists(path.resolve(this.options.buildDir, &apos;dist&apos;, &apos;server&apos;, &apos;client.manifest.json&apos;))
+      if (!hasBuilt) {
+        throw new Error(
+          `No build files found in ${this.srcBuiltPath}.\nPlease run \`nuxt build\``
+        )
+      }
+    }
+
+    // Initialize dist directory
+    if (init) {
+      await this.initDist()
+    }
+  }
+
+  async initRoutes (...args) {
+    // Resolve config.generate.routes promises before generating the routes
+    let generateRoutes = []
+    if (this.options.router.mode !== &apos;hash&apos;) {
+      try {
+        generateRoutes = await promisifyRoute(
+          this.options.generate.routes || [],
+          ...args
+        )
+      } catch (e) {
+        consola.error(&apos;Could not resolve routes&apos;)
+        throw e // eslint-disable-line no-unreachable
+      }
+    }
+    let routes = []
+    // Generate only index.html for router.mode = &apos;hash&apos; or client-side apps
+    if (this.options.router.mode === &apos;hash&apos;) {
+      routes = [&apos;/&apos;]
+    } else {
+      try {
+        routes = flatRoutes(this.getAppRoutes())
+      } catch (err) {
+        // Case: where we use custom router.js
+        // https://github.com/nuxt-community/router-module/issues/83
+        routes = [&apos;/&apos;]
+      }
+    }
+    routes = routes.filter(route =&gt; this.shouldGenerateRoute(route))
+    routes = this.decorateWithPayloads(routes, generateRoutes)
+
+    // extendRoutes hook
+    await this.nuxt.callHook(&apos;generate:extendRoutes&apos;, routes)
+    await this.nuxt.callHook(&apos;export:extendRoutes&apos;, { routes })
+
+    return routes
+  }
+
+  shouldGenerateRoute (route) {
+    return this.options.generate.exclude.every((regex) =&gt; {
+      if (typeof regex === &apos;string&apos;) {
+        return regex !== route
+      }
+      return !regex.test(route)
+    })
+  }
+
+  getBuildConfig () {
+    try {
+      return requireModule(path.join(this.options.buildDir, &apos;nuxt/config.json&apos;))
+    } catch (err) {
+      return null
+    }
+  }
+
+  getAppRoutes () {
+    return requireModule(path.join(this.options.buildDir, &apos;routes.json&apos;))
+  }
+
+  async generateRoutes (routes) {
+    const errors = []
+
+    this.routes = []
+    this.generatedRoutes = new Set()
+
+    routes.forEach(({ route, ...props }) =&gt; {
+      route = decodeURI(this.normalizeSlash(route))
+      this.routes.push({ route, ...props })
+      // Add routes to the tracked generated routes (for crawler)
+      this.generatedRoutes.add(route)
+    })
+
+    // Start generate process
+    while (this.routes.length) {
+      let n = 0
+      await Promise.all(
+        this.routes
+          .splice(0, this.options.generate.concurrency)
+          .map(async ({ route, payload }) =&gt; {
+            await waitFor(n++ * this.options.generate.interval)
+            await this.generateRoute({ route, payload, errors })
+          })
+      )
+    }
+
+    // Improve string representation for errors
+    // TODO: Use consola for more consistency
+    errors.toString = () =&gt; this._formatErrors(errors)
+
+    return errors
+  }
+
+  _formatErrors (errors) {
+    return errors
+      .map(({ type, route, error }) =&gt; {
+        const isHandled = type === &apos;handled&apos;
+        const color = isHandled ? &apos;yellow&apos; : &apos;red&apos;
+
+        let line = chalk[color](` ${route}\n\n`)
+
+        if (isHandled) {
+          line += chalk.grey(JSON.stringify(error, undefined, 2) + &apos;\n&apos;)
+        } else {
+          line += chalk.grey(error.stack || error.message || `${error}`)
+        }
+
+        return line
+      })
+      .join(&apos;\n&apos;)
+  }
+
+  async afterGenerate () {
+    const { fallback } = this.options.generate
+
+    // Disable SPA fallback if value isn&apos;t a non-empty string
+    if (typeof fallback !== &apos;string&apos; || !fallback) {
+      return
+    }
+
+    const fallbackPath = path.join(this.distPath, fallback)
+
+    // Prevent conflicts
+    if (await fsExtra.exists(fallbackPath)) {
+      consola.warn(`SPA fallback was configured, but the configured path (${fallbackPath}) already exists.`)
+      return
+    }
+
+    // Render and write the SPA template to the fallback path
+    let { html } = await this.nuxt.server.renderRoute(&apos;/&apos;, {
+      spa: true,
+      staticAssetsBase: this.staticAssetsBase
+    })
+
+    try {
+      html = this.minifyHtml(html)
+    } catch (error) {
+      consola.warn(&apos;HTML minification failed for SPA fallback&apos;)
+    }
+
+    await fsExtra.writeFile(fallbackPath, html, &apos;utf8&apos;)
+    consola.success(&apos;Client-side fallback created: `&apos; + fallback + &apos;`&apos;)
+  }
+
+  async initDist () {
+    // Clean destination folder
+    await fsExtra.emptyDir(this.distPath)
+
+    consola.info(`Generating output directory: ${path.basename(this.distPath)}/`)
+    await this.nuxt.callHook(&apos;generate:distRemoved&apos;, this)
+    await this.nuxt.callHook(&apos;export:distRemoved&apos;, this)
+
+    // Copy static and built files
+    if (await fsExtra.exists(this.staticRoutes)) {
+      await fsExtra.copy(this.staticRoutes, this.distPath)
+    }
+    // Copy .nuxt/dist/client/ to dist/_nuxt/
+    await fsExtra.copy(this.srcBuiltPath, this.distNuxtPath)
+
+    if (this.payloadDir) {
+      await fsExtra.ensureDir(this.payloadDir)
+    }
+
+    // Add .nojekyll file to let GitHub Pages add the _nuxt/ folder
+    // https://help.github.com/articles/files-that-start-with-an-underscore-are-missing/
+    if (this.options.generate.nojekyll) {
+      const nojekyllPath = path.resolve(this.distPath, &apos;.nojekyll&apos;)
+      await fsExtra.writeFile(nojekyllPath, &apos;&apos;)
+    }
+
+    await this.nuxt.callHook(&apos;generate:distCopied&apos;, this)
+    await this.nuxt.callHook(&apos;export:distCopied&apos;, this)
+  }
+
+  normalizeSlash (route) {
+    return this.options.router &amp;&amp; this.options.router.trailingSlash ? withTrailingSlash(route) : withoutTrailingSlash(route)
+  }
+
+  decorateWithPayloads (routes, generateRoutes) {
+    const routeMap = {}
+    // Fill routeMap for known routes
+    routes.forEach((route) =&gt; {
+      routeMap[route] = { route: this.normalizeSlash(route), payload: null }
+    })
+    // Fill routeMap with given generate.routes
+    generateRoutes.forEach((route) =&gt; {
+      // route is either a string or like { route : &apos;/my_route/1&apos;, payload: {} }
+      const path = isString(route) ? route : route.route
+      routeMap[path] = {
+        route: this.normalizeSlash(path),
+        payload: route.payload || null
+      }
+    })
+    return Object.values(routeMap)
+  }
+
+  async generateRoute ({ route, payload = {}, errors = [] }) {
+    let html
+    const pageErrors = []
+
+    route = this.normalizeSlash(route)
+
+    const setPayload = (_payload) =&gt; {
+      payload = defu(_payload, payload)
+    }
+
+    // Apply shared payload
+    if (this._payload) {
+      payload = defu(payload, this._payload)
+    }
+
+    await this.nuxt.callHook(&apos;generate:route&apos;, { route, setPayload })
+    await this.nuxt.callHook(&apos;export:route&apos;, { route, setPayload })
+
+    try {
+      const renderContext = {
+        payload,
+        staticAssetsBase: this.staticAssetsBase
+      }
+      const res = await this.nuxt.server.renderRoute(route, renderContext)
+      html = res.html
+
+      // If crawler activated and called from generateRoutes()
+      if (this.options.generate.crawler &amp;&amp; this.options.render.ssr) {
+        parse(html).querySelectorAll(&apos;a&apos;).map((el) =&gt; {
+          const sanitizedHref = (el.getAttribute(&apos;href&apos;) || &apos;&apos;)
+            .replace(this.options.router.base, &apos;/&apos;)
+            .split(&apos;?&apos;)[0]
+            .split(&apos;#&apos;)[0]
+            .replace(/\/+$/, &apos;&apos;)
+            .trim()
+
+          const foundRoute = decodeURI(this.normalizeSlash(sanitizedHref))
+
+          if (foundRoute.startsWith(&apos;/&apos;) &amp;&amp; !foundRoute.startsWith(&apos;//&apos;) &amp;&amp; !path.extname(foundRoute) &amp;&amp; this.shouldGenerateRoute(foundRoute) &amp;&amp; !this.generatedRoutes.has(foundRoute)) {
+            this.generatedRoutes.add(foundRoute)
+            this.routes.push({ route: foundRoute })
+          }
+          return null
+        })
+      }
+
+      // Save Static Assets
+      if (this.staticAssetsDir &amp;&amp; renderContext.staticAssets) {
+        for (const asset of renderContext.staticAssets) {
+          const assetPath = path.join(this.staticAssetsDir, decodeURI(asset.path))
+          await fsExtra.ensureDir(path.dirname(assetPath))
+          await fsExtra.writeFile(assetPath, asset.src, &apos;utf-8&apos;)
+        }
+        // Add route to manifest (only if no error and redirect)
+        if (this.manifest &amp;&amp; (!res.error &amp;&amp; !res.redirected)) {
+          this.manifest.routes.push(withoutTrailingSlash(route))
+        }
+      }
+
+      // SPA fallback
+      if (res.error) {
+        pageErrors.push({ type: &apos;handled&apos;, route, error: res.error })
+      }
+    } catch (err) {
+      pageErrors.push({ type: &apos;unhandled&apos;, route, error: err })
+      errors.push(...pageErrors)
+
+      await this.nuxt.callHook(&apos;generate:routeFailed&apos;, { route, errors: pageErrors })
+      await this.nuxt.callHook(&apos;export:routeFailed&apos;, { route, errors: pageErrors })
+      consola.error(this._formatErrors(pageErrors))
+
+      return false
+    }
+
+    try {
+      html = this.minifyHtml(html)
+    } catch (err) {
+      const minifyErr = new Error(
+        `HTML minification failed. Make sure the route generates valid HTML. Failed HTML:\n ${html}`
+      )
+      pageErrors.push({ type: &apos;unhandled&apos;, route, error: minifyErr })
+    }
+
+    let fileName
+
+    if (this.options.generate.subFolders) {
+      fileName = route === &apos;/404&apos;
+        ? path.join(path.sep, &apos;404.html&apos;) // /404 -&gt; /404.html
+        : path.join(route, path.sep, &apos;index.html&apos;) // /about -&gt; /about/index.html
+    } else {
+      const normalizedRoute = route.replace(/\/$/, &apos;&apos;)
+      fileName = route.length &gt; 1 ? path.join(path.sep, normalizedRoute + &apos;.html&apos;) : path.join(path.sep, &apos;index.html&apos;)
+    }
+
+    // Call hook to let user update the path &amp; html
+    const page = {
+      route,
+      path: fileName,
+      html,
+      exclude: false,
+      errors: pageErrors
+    }
+    page.page = page // Backward compatibility for export:page hook
+    await this.nuxt.callHook(&apos;generate:page&apos;, page)
+
+    if (page.exclude) {
+      return false
+    }
+    page.path = path.join(this.distPath, page.path)
+
+    // Make sure the sub folders are created
+    await fsExtra.mkdirp(path.dirname(page.path))
+    await fsExtra.writeFile(page.path, page.html, &apos;utf8&apos;)
+
+    await this.nuxt.callHook(&apos;generate:routeCreated&apos;, { route, path: page.path, errors: pageErrors })
+    await this.nuxt.callHook(&apos;export:routeCreated&apos;, { route, path: page.path, errors: pageErrors })
+
+    if (pageErrors.length) {
+      consola.error(`Error generating route &quot;${route}&quot;: ${pageErrors.map(e =&gt; e.error.message).join(&apos;, &apos;)}`)
+      errors.push(...pageErrors)
+    } else {
+      consola.success(`Generated route &quot;${route}&quot;`)
+    }
+
+    return true
+  }
+
+  minifyHtml (html) {
+    let minificationOptions = this.options.build.html.minify
+
+    // Legacy: Override minification options with generate.minify if present
+    // TODO: Remove in Nuxt version 3
+    if (typeof this.options.generate.minify !== &apos;undefined&apos;) {
+      minificationOptions = this.options.generate.minify
+      consola.warn(&apos;generate.minify has been deprecated and will be removed in the next major version.&apos; +
+        &apos; Use build.html.minify instead!&apos;)
+    }
+
+    if (!minificationOptions) {
+      return html
+    }
+
+    return htmlMinifier.minify(html, minificationOptions)
+  }
+}
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
